@@ -39,8 +39,12 @@ module Cinch
       message "USER #{@config.nick} 0 * :#{@config.realname}"
 
       Thread.new do
-        while line = @socket.gets
-          parse line
+        begin
+          while line = @socket.gets
+            parse line
+          end
+        rescue => e
+          @bot.logger.log_exception(e)
         end
 
         @bot.dispatch(:disconnect)
