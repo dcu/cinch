@@ -452,10 +452,11 @@ module Cinch
               when 0; []
               when 1; match[0..block.arity-1 - args.size]
               end
+
       Thread.new do
         begin
           catch(:halt) do
-            @callback.instance_exec(msg, *args, *bargs, &block)
+            @callback.instance_exec(msg, *(args+bargs), &block)
           end
         rescue => e
           @logger.log_exception(e)

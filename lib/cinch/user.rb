@@ -36,7 +36,7 @@ module Cinch
           raise ArgumentError
         end
         downcased_nick = nick.irc_downcase(bot.irc.isupport["CASEMAPPING"])
-        @users[downcased_nick] ||= new(*bargs, bot)
+        @users[downcased_nick] ||= new(*(bargs+[bot]))
         @users[downcased_nick]
       end
 
