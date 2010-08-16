@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'cinch'
+require '../helper'
 
 class TinyURL
   include Cinch::Plugin

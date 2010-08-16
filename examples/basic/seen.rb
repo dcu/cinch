@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 
 class Seen < Struct.new(:who, :where, :what, :time)
   def to_s

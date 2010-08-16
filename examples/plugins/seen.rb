@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 
 class Seen
   class SeenStruct < Struct.new(:who, :where, :what, :time)

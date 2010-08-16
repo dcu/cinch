@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 
 class JoinPart
   include Cinch::Plugin

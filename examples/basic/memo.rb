@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'cinch'
+require '../helper'
 
 class Memo < Struct.new(:nick, :channel, :text, :time)
   def to_s

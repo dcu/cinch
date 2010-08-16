@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 require 'open-uri'
 require 'nokogiri'
 require 'cgi'

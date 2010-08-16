@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 
 bot = Cinch::Bot.new do
   configure do |c|

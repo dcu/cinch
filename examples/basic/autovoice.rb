@@ -1,4 +1,4 @@
-require 'cinch'
+require '../helper'
 
 # Give this bot ops in a channel and it'll auto voice
 # visitors

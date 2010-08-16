@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'cinch'
+require '../helper'
 
 # Automatically shorten URL's found in messages
 # Using the tinyURL API
